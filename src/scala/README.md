@@ -7,7 +7,7 @@ Installs Scala, SDKMAN! (if not installed), and needed dependencies.
 
 ```json
 "features": {
-    "ghcr.io/ebaskoro/features/scala:0": {}
+    "ghcr.io/ebaskoro/devcontainer-features/scala:1": {}
 }
 ```
 
@@ -23,4 +23,4 @@ Installs Scala, SDKMAN! (if not installed), and needed dependencies.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ebaskoro/features/blob/main/src/scala/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ebaskoro/devcontainer-features/blob/main/src/scala/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
