@@ -13,8 +13,9 @@ The example below installs the `java` SDK using [SDKMAN!](https://sdkman.io) fea
     "name": "Java",
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-        "ghcr.io/ebaskoro/features/sdkman:1": {
-            "candidate": "java"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {
+            "candidate": "java",
+            "version": "latest"
         }
     }
 }
