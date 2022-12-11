@@ -1,0 +1,10 @@
+{
+    "install_sbt": {
+        "image": "ubuntu:latest",
+        "features": {
+            "scala": {
+                "installSbt": true
+            }
+        }
+    }
+}

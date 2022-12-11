@@ -1,0 +1,10 @@
+{
+    "candidate_java": {
+        "image": "ubuntu:latest",
+        "features": {
+            "sdkman": {
+                "candidate": "java"
+            }
+        }
+    }
+}

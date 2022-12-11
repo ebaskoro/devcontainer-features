@@ -1,0 +1,49 @@
+{
+  "id": "sdkman",
+  "version": "1.0.0",
+  "name": "SDKMAN!",
+  "description": "Installs SDKMAN!",
+  "options": {
+    "candidate": {
+      "type": "string",
+      "description": "Select a candidate to install",
+      "enum": [
+        "activemq",
+        "ant",
+        "asciidoctorj",
+        "gradle",
+        "grails",
+        "groovy",
+        "hadoop",
+        "java",
+        "jmeter",
+        "kotlin",
+        "leiningen",
+        "maven",
+        "micronaut",
+        "sbt",
+        "scala",
+        "scalacli",
+        "spark",
+        "springboot",
+        "tomcat",
+        "vertx"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "Select or enter the version to install"
+    }
+  },
+  "containerEnv": {
+    "SDKMAN_DIR": "/usr/local/sdkman",
+    "PATH": "/usr/local/sdkman/bin:${PATH}"
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

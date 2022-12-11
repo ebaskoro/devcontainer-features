@@ -1,0 +1,37 @@
+{
+  "id": "scala",
+  "version": "1.0.0",
+  "name": "Scala (via SDKMAN!)",
+  "description": "Installs Scala, SDKMAN! (if not installed), and needed dependencies.",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "Select or enter a Scala version to install"
+    },
+    "installSbt": {
+      "type": "boolean",
+      "default": false,
+      "description": "Install SBT, the Scala Build Toolchain"
+    },
+    "sbtVersion": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "Select or enter SBT version to install"
+    }
+  },
+  "containerEnv": {
+    "SDKMAN_DIR": "/usr/local/sdkman",
+    "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+    "PATH": "/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/scala/current/bin:${PATH}"
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
