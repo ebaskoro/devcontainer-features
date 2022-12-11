@@ -7,7 +7,7 @@ Installs SDKMAN!
 
 ```json
 "features": {
-    "ghcr.io/ebaskoro/features/sdkman:0": {}
+    "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
 }
 ```
 
@@ -22,4 +22,4 @@ Installs SDKMAN!
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ebaskoro/features/blob/main/src/sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ebaskoro/devcontainer-features/blob/main/src/sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
