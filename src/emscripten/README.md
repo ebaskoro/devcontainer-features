@@ -7,7 +7,7 @@ Installs Emscripten
 
 ```json
 "features": {
-    "ghcr.io/ebaskoro/devcontainer-features/emscripten:0": {}
+    "ghcr.io/ebaskoro/devcontainer-features/emscripten:1": {}
 }
 ```
 
