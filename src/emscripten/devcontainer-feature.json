@@ -1,6 +1,6 @@
 {
     "id": "emscripten",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "name": "Emscripten",
     "documentationURL": "https://github.com/ebaskoro/devcontainer-features/tree/main/src/emscripten",
     "description": "Installs Emscripten",
