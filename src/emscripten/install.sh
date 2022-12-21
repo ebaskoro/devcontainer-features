@@ -60,8 +60,7 @@ check_packages \
     bzip2 \
     sed \
     git-core \
-    python3 \
-    python-is-python3
+    python3
 
 if [ ! -d "${EMSDK_DIR}" ]; then
     echo "Creating ${EMSDK_DIR} directory"
