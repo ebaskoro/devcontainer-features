@@ -1,0 +1,9 @@
+{
+    "install": {
+        "image": "debian:latest",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {},
+            "grain": {}
+        }
+    }
+}
