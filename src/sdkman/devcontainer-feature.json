@@ -2,6 +2,7 @@
   "id": "sdkman",
   "version": "1.0.0",
   "name": "SDKMAN!",
+  "documentationURL": "https://github.com/ebaskoro/devcontainer-features/tree/main/src/sdkman",
   "description": "Installs SDKMAN!",
   "options": {
     "candidate": {

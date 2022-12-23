@@ -2,6 +2,7 @@
   "id": "scala",
   "version": "1.0.0",
   "name": "Scala (via SDKMAN!)",
+  "documentationURL": "https://github.com/ebaskoro/devcontainer-features/tree/main/src/scala",
   "description": "Installs Scala, SDKMAN! (if not installed), and needed dependencies.",
   "options": {
     "version": {
