@@ -13,6 +13,8 @@ jobs:
       matrix:
         features:
           - scala
+          - emscripten
+          - grain
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,6 +36,7 @@ jobs:
         features:
           - scala
           - sdkman
+          - grain
     steps:
       - uses: actions/checkout@v3
 
