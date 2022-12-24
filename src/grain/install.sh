@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 UPDATE_RC="${UPDATE_RC:-"true"}"
+GRAIN_DIR="${GRAIN_DIR:-"/usr/local/grain"}"
 
 set -e
 
@@ -25,6 +26,18 @@ check_packages()
         apt_get_update
         apt-get -y install --no-install-recommends "$@"
     fi
+}
+
+check_node()
+{
+    if ! type npm > /dev/null 2>&1; then
+        echo "Installing node and npm..."
+        check_packages curl
+		curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
+		export NVM_DIR=/usr/local/share/nvm
+		[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+		[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+    fi                                                                                                                                                              
 }
 
 updaterc()
@@ -60,20 +73,23 @@ check_packages \
     bzip2 \
     sed \
     git-core \
-    libssl-dev
+    libssl-dev \
+    patch
 
 if ! grain --version > /dev/null; then
-    echo "Cloning the latest grain"
-    git clone "https://github.com/grain-lang/grain"
+    check_node
+    
+    echo "Creating ${GRAIN_DIR} directory"
+    mkdir -p "${GRAIN_DIR}"
 
-    cd grain
+    echo "Cloning the latest grain"
+    git clone "https://github.com/grain-lang/grain" ${GRAIN_DIR}
+
+    cd ${GRAIN_DIR}
 
     npm ci
 
     npm run compiler build
-
-    cd ..
-    rm -Rf grain
 fi
 
 rm -rf /var/lib/apt/lists/*
