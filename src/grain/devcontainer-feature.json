@@ -1,0 +1,17 @@
+{
+    "id": "grain",
+    "version": "0.0.1",
+    "name": "Grain",
+    "documentationURL": "https://github.com/ebaskoro/devcontainer-features/tree/main/src/grain",
+    "description": "Install Grain",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "grain-lang.vscode-grain"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node:1"
+    ]
+}
