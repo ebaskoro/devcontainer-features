@@ -1,7 +1,7 @@
 
 # Grain (grain)
 
-Install Grain
+Grain is a new language that puts academic language features to work. It compiles directly to WebAssembly.
 
 ## Example Usage
 
