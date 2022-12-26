@@ -1,9 +1,9 @@
 {
     "id": "grain",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "name": "Grain",
     "documentationURL": "https://github.com/ebaskoro/devcontainer-features/tree/main/src/grain",
-    "description": "Install Grain",
+    "description": "Grain is a new language that puts academic language features to work. It compiles directly to WebAssembly.",
     "customizations": {
         "vscode": {
             "extensions": [

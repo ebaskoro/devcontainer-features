@@ -5,5 +5,11 @@
             "ghcr.io/devcontainers/features/node:1": {},
             "grain": {}
         }
+    },
+    "compile": {
+        "image": "debian:latest",
+        "features": {
+            "grain": {}
+        }
     }
 }
